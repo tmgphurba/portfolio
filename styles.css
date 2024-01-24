@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Overused Grotesk';
+    src:
+        url('./fonts/OverusedGrotesk-VF.woff2') format('woff2 supports variations'),
+        url('./fonts/OverusedGrotesk-VF.woff2') format('woff2-variations');
+    font-weight: 300 400 500 600 700 800 900;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins";
+    color: #393632;
+    background-color: #E7E7E2;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Overused Grotesk';
+}
+
+.bg-image {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.712)), url(images/background.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 8rem;
+}
+
+.title-space {
+    padding-left: 12rem;
+}
+
+.hero-desc {
+    font-size: 1.65rem;
+    text-align: center;
+}
+
+.section-title {
+    text-align: center;
+    margin: 3rem;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+
+    .hero-title,
+    .hero-desc {
+        text-align: left;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .title-space {
+        padding-left: 0;
+    }
+
+    .hero-desc {
+        font-size: 1.2rem;
+    }
+
+}
+
+hr {
+    border: dotted #393632 6px;
+    border-bottom: none;
+    width: 20px;
+    margin: 60px auto;
+}
+
+.skills {
+    margin: 100px 0 100px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin: 3rem;
+    font-weight: 700;
+    font-size: 2.35rem;
+}
+
+.content-box {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    margin: 100px auto 0 auto;
+    width: 50%;
+    text-align: left;
+    row-gap: 2rem;
+}
+
+.skills h3 {
+    font-size: 1.25rem;
+    padding-bottom: 15px;
+}
+
+.code-img {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.chilli-img {
+    width: 50%;
+    margin-left: 30px;
+}
+
+.contact-me {
+    text-align: center;
+}
+
+.contact-me h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+}
+
+.contact-me h3 {
+    font-weight: 500;
+    margin: 18px 0;
+}
+
+.contact-message {
+    width: 40%;
+    margin: 40px auto 60px;
+}
+
+.btn {
+    text-decoration: none;
+    border: 2px solid #393632;
+    background-color: #393632;
+    color: #E7E7E2;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #E7E7E2;
+    color: #393632;
+}
+
+footer  {
+    text-align: center;
+    color:#E7E7E2;
+    background-color: #393632;
+    padding: 50px 0 20px;
+}
+
+footer a {
+    color: #AFAF9D;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
