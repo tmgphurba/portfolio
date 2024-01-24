@@ -83,7 +83,7 @@ hr {
     margin: 60px auto;
 }
 
-.skills {
+.middle-container {
     margin: 100px 0 100px 0;
 }
 
@@ -104,6 +104,16 @@ hr {
     row-gap: 2rem;
 }
 
+.content-box-2 {
+    display: grid;
+    grid-template-columns: .7fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    margin: 100px auto 0 auto;
+    width: 50%;
+    text-align: left;
+    row-gap: 2rem;
+}
+
 .skills h3 {
     font-size: 1.25rem;
     padding-bottom: 15px;
@@ -116,14 +126,14 @@ hr {
 }
 
 @media (max-width: 1024px) {
-    .content-box {
+    .content-box, .content-box-2 {
         display: block;
         text-align: center;
         margin: 100px auto 0 auto;
         width: 80%;
     }
 
-    .coding {
+    .coding, .description {
         margin-bottom: 20px;
     }
 }
